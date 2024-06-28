@@ -1,0 +1,4 @@
+C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.vcxproj.AssemblyReference.cache
+C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.Form1.resources
+C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.vcxproj.GenerateResource.cache
+C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.suche.resources
