@@ -1,8 +1,8 @@
 #pragma once
 
 #include "suche.h"
-//#include "stdafx.h"
-//#include <windows.h>
+#include <fstream>
+//#include <msclr\marshal_cppstd.h>
 
 namespace CppCLRWinFormsProject {
 
@@ -72,6 +72,7 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::ToolStripMenuItem^ HintergundfarbenAendernToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripSeparator^ toolStripSeparator3;
 	private: System::Windows::Forms::ToolStripSeparator^ toolStripSeparator2;
+	private: System::Windows::Forms::ToolStripMenuItem^ linksOhneNachfrageOeffnenToolStripMenuItem;
 
 
 
@@ -100,7 +101,10 @@ namespace CppCLRWinFormsProject {
 			this->extrasToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripMenuItem_Suche = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->toolStripMenu_Zeilenumbruch = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->linksOhneNachfrageOeffnenToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator3 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->toolStripMenuItem_changeFont = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->SchriftfarbenAendernToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->HintergundfarbenAendernToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->infoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -112,8 +116,6 @@ namespace CppCLRWinFormsProject {
 			this->rtb_editor = (gcnew System::Windows::Forms::RichTextBox());
 			this->fontDialog = (gcnew System::Windows::Forms::FontDialog());
 			this->colorDialog = (gcnew System::Windows::Forms::ColorDialog());
-			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
-			this->toolStripSeparator3 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->mainmenue->SuspendLayout();
 			this->statusStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -143,42 +145,42 @@ namespace CppCLRWinFormsProject {
 			// speichernToolStripMenuItem
 			// 
 			this->speichernToolStripMenuItem->Name = L"speichernToolStripMenuItem";
-			this->speichernToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->speichernToolStripMenuItem->Size = System::Drawing::Size(166, 22);
 			this->speichernToolStripMenuItem->Text = L"&Speichern";
 			this->speichernToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::speichernToolStripMenuItem_Click);
 			// 
 			// speichernUnterToolStripMenuItem
 			// 
 			this->speichernUnterToolStripMenuItem->Name = L"speichernUnterToolStripMenuItem";
-			this->speichernUnterToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->speichernUnterToolStripMenuItem->Size = System::Drawing::Size(166, 22);
 			this->speichernUnterToolStripMenuItem->Text = L"Speichern &unter...";
 			this->speichernUnterToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::speichernUnterToolStripMenuItem_Click);
 			// 
 			// dateiOeffnenToolStripMenuItem
 			// 
 			this->dateiOeffnenToolStripMenuItem->Name = L"dateiOeffnenToolStripMenuItem";
-			this->dateiOeffnenToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->dateiOeffnenToolStripMenuItem->Size = System::Drawing::Size(166, 22);
 			this->dateiOeffnenToolStripMenuItem->Text = L"&Datei öffnen";
 			this->dateiOeffnenToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::dateiOeffnenToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator1
 			// 
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(177, 6);
+			this->toolStripSeparator1->Size = System::Drawing::Size(163, 6);
 			// 
 			// beendenToolStripMenuItem
 			// 
 			this->beendenToolStripMenuItem->Name = L"beendenToolStripMenuItem";
-			this->beendenToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->beendenToolStripMenuItem->Size = System::Drawing::Size(166, 22);
 			this->beendenToolStripMenuItem->Text = L"&Beenden";
 			this->beendenToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::beendenToolStripMenuItem_Click);
 			// 
 			// extrasToolStripMenuItem
 			// 
-			this->extrasToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {
+			this->extrasToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(8) {
 				this->toolStripMenuItem_Suche,
-					this->toolStripMenu_Zeilenumbruch, this->toolStripSeparator3, this->toolStripMenuItem_changeFont, this->toolStripSeparator2,
-					this->SchriftfarbenAendernToolStripMenuItem, this->HintergundfarbenAendernToolStripMenuItem
+					this->toolStripMenu_Zeilenumbruch, this->linksOhneNachfrageOeffnenToolStripMenuItem, this->toolStripSeparator3, this->toolStripMenuItem_changeFont,
+					this->toolStripSeparator2, this->SchriftfarbenAendernToolStripMenuItem, this->HintergundfarbenAendernToolStripMenuItem
 			});
 			this->extrasToolStripMenuItem->Name = L"extrasToolStripMenuItem";
 			this->extrasToolStripMenuItem->Size = System::Drawing::Size(50, 20);
@@ -187,35 +189,52 @@ namespace CppCLRWinFormsProject {
 			// toolStripMenuItem_Suche
 			// 
 			this->toolStripMenuItem_Suche->Name = L"toolStripMenuItem_Suche";
-			this->toolStripMenuItem_Suche->Size = System::Drawing::Size(202, 22);
+			this->toolStripMenuItem_Suche->Size = System::Drawing::Size(227, 22);
 			this->toolStripMenuItem_Suche->Text = L"&Suche";
 			this->toolStripMenuItem_Suche->Click += gcnew System::EventHandler(this, &Form1::toolStripMenuItem_Suche_Click);
 			// 
 			// toolStripMenu_Zeilenumbruch
 			// 
 			this->toolStripMenu_Zeilenumbruch->Name = L"toolStripMenu_Zeilenumbruch";
-			this->toolStripMenu_Zeilenumbruch->Size = System::Drawing::Size(202, 22);
+			this->toolStripMenu_Zeilenumbruch->Size = System::Drawing::Size(227, 22);
 			this->toolStripMenu_Zeilenumbruch->Text = L"&Zeilenumbruch: Aus";
 			this->toolStripMenu_Zeilenumbruch->Click += gcnew System::EventHandler(this, &Form1::toolStripMenu_Zeilenumbruch_Click);
+			// 
+			// linksOhneNachfrageOeffnenToolStripMenuItem
+			// 
+			this->linksOhneNachfrageOeffnenToolStripMenuItem->Name = L"linksOhneNachfrageOeffnenToolStripMenuItem";
+			this->linksOhneNachfrageOeffnenToolStripMenuItem->Size = System::Drawing::Size(227, 22);
+			this->linksOhneNachfrageOeffnenToolStripMenuItem->Text = L"&Links ohne Nachfrage öffnen";
+			this->linksOhneNachfrageOeffnenToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::linksOhneNachfrageOeffnenToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this->toolStripSeparator3->Name = L"toolStripSeparator3";
+			this->toolStripSeparator3->Size = System::Drawing::Size(224, 6);
 			// 
 			// toolStripMenuItem_changeFont
 			// 
 			this->toolStripMenuItem_changeFont->Name = L"toolStripMenuItem_changeFont";
-			this->toolStripMenuItem_changeFont->Size = System::Drawing::Size(202, 22);
+			this->toolStripMenuItem_changeFont->Size = System::Drawing::Size(227, 22);
 			this->toolStripMenuItem_changeFont->Text = L"Schrift&art ändern";
 			this->toolStripMenuItem_changeFont->Click += gcnew System::EventHandler(this, &Form1::toolStripMenuItem_changeFont_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this->toolStripSeparator2->Name = L"toolStripSeparator2";
+			this->toolStripSeparator2->Size = System::Drawing::Size(224, 6);
 			// 
 			// SchriftfarbenAendernToolStripMenuItem
 			// 
 			this->SchriftfarbenAendernToolStripMenuItem->Name = L"SchriftfarbenAendernToolStripMenuItem";
-			this->SchriftfarbenAendernToolStripMenuItem->Size = System::Drawing::Size(202, 22);
+			this->SchriftfarbenAendernToolStripMenuItem->Size = System::Drawing::Size(227, 22);
 			this->SchriftfarbenAendernToolStripMenuItem->Text = L"&Schriftfarbe ändern";
 			this->SchriftfarbenAendernToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::SchriftfarbenAendernToolStripMenuItem_Click);
 			// 
 			// HintergundfarbenAendernToolStripMenuItem
 			// 
 			this->HintergundfarbenAendernToolStripMenuItem->Name = L"HintergundfarbenAendernToolStripMenuItem";
-			this->HintergundfarbenAendernToolStripMenuItem->Size = System::Drawing::Size(202, 22);
+			this->HintergundfarbenAendernToolStripMenuItem->Size = System::Drawing::Size(227, 22);
 			this->HintergundfarbenAendernToolStripMenuItem->Text = L"&Hintergundfarbe ändern";
 			this->HintergundfarbenAendernToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::HintergundfarbenAendernToolStripMenuItem_Click);
 			// 
@@ -261,23 +280,15 @@ namespace CppCLRWinFormsProject {
 			this->rtb_editor->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->rtb_editor->Font = (gcnew System::Drawing::Font(L"Courier New", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->rtb_editor->Location = System::Drawing::Point(12, 37);
+			this->rtb_editor->Location = System::Drawing::Point(0, 27);
 			this->rtb_editor->Name = L"rtb_editor";
-			this->rtb_editor->Size = System::Drawing::Size(509, 328);
+			this->rtb_editor->Size = System::Drawing::Size(569, 389);
 			this->rtb_editor->TabIndex = 3;
 			this->rtb_editor->Text = L"";
 			this->rtb_editor->WordWrap = false;
+			this->rtb_editor->LinkClicked += gcnew System::Windows::Forms::LinkClickedEventHandler(this, &Form1::rtb_editor_LinkClicked);
+			this->rtb_editor->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &Form1::rtb_editor_MouseClick);
 			this->rtb_editor->TextChanged += gcnew System::EventHandler(this, &Form1::rtb_editor_TextChanged);
-			// 
-			// toolStripSeparator2
-			// 
-			this->toolStripSeparator2->Name = L"toolStripSeparator2";
-			this->toolStripSeparator2->Size = System::Drawing::Size(199, 6);
-			// 
-			// toolStripSeparator3
-			// 
-			this->toolStripSeparator3->Name = L"toolStripSeparator3";
-			this->toolStripSeparator3->Size = System::Drawing::Size(199, 6);
 			// 
 			// Form1
 			// 
@@ -303,17 +314,28 @@ namespace CppCLRWinFormsProject {
 		}
 #pragma endregion
 
+private: System::Void openURL(String^ myURL) {
+	//const char* url = myURL.c_str();
+
+	char cStr[1000] = { 0 };
+	String^ clrString = myURL;
+	if (clrString->Length < sizeof(cStr))
+		sprintf(cStr, "%s", clrString);
+	std::string url(cStr);
+
+	std::fstream fs;
+	fs.open(url);
+	fs.close();
+}
+
 private: System::Void Form1_SizeChanged(System::Object^ sender, System::EventArgs^ e) {
-	
-	//txt_editor->Dock = DockStyle::Fill;
+	;
 	rtb_editor->Dock = DockStyle::Fill;
 
 }
 private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
-	//txt_editor->Dock = DockStyle::Fill;
 	rtb_editor->Dock = DockStyle::Fill;
 	rtb_editor->WordWrap = false;
-	//this->Text += " - neu.txt*";
 	rtb_editor->Text = "\n  ToDo:\n  ---------\n\n  - Suche implementieren\n  - Öffnen-Dialog als Stream statt Zeile für Zeile";
 
 	if (toolStripStatusLabel_savefile->Text == "")
@@ -327,20 +349,13 @@ private: System::Void beendenToolStripMenuItem_Click(System::Object^ sender, Sys
 }
 
 private: System::Void speichernUnterToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	//saveFileDialog->ShowDialog();
-	
-	// Displays a SaveFileDialog so the user can save the Image
-	  // assigned to Button2.
+
 	saveFileDialog->Filter ="TXT Text|*.txt|Alle Dateien|*.*";
 	saveFileDialog->Title = "Textdatei speichern";
 	saveFileDialog->ShowDialog();
 	
-	
-	// If the file name is not an empty string, open it for saving.
 	if (saveFileDialog->FileName != "")
 	{
-		
-		//saveFileDialog->OpenFile();
 		
 		String^ fs = rtb_editor->Text;
 
@@ -360,7 +375,6 @@ private: System::Void dateiOeffnenToolStripMenuItem_Click(System::Object^ sender
 	if (openFileDialog->FileName != "")
 	{
 
-		//String^ textFile = openFileDialog->FileName;
 		StreamReader^ reader = gcnew StreamReader(openFileDialog->FileName);
 		String^ myFile = "";
 
@@ -408,8 +422,6 @@ private: System::Void toolStripMenu_Zeilenumbruch_Click(System::Object^ sender, 
 	
 }
 private: System::Void toolStripMenuItem_changeFont_Click(System::Object^ sender, System::EventArgs^ e) {
-	//fontDialog->ShowDialog();
-	//rtb_editor->Font = fontDialog->
 
 	if (fontDialog->ShowDialog() != System::Windows::Forms::DialogResult::Cancel)
 	{
@@ -426,16 +438,51 @@ private: System::Void speichernToolStripMenuItem_Click(System::Object^ sender, S
 
 }
 private: System::Void SchriftfarbenAendernToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	
+
 	if (colorDialog->ShowDialog() != System::Windows::Forms::DialogResult::Cancel)
 	{
 		rtb_editor->ForeColor = colorDialog->Color;
 	}
 }
 private: System::Void HintergundfarbenAendernToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+
 	if (colorDialog->ShowDialog() != System::Windows::Forms::DialogResult::Cancel)
 	{
 		rtb_editor->BackColor = colorDialog->Color;
+	}
+}
+private: System::Void rtb_editor_MouseClick(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+
+}
+private: System::Void rtb_editor_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkClickedEventArgs^ e) {
+	if (linksOhneNachfrageOeffnenToolStripMenuItem->Text == "&Links mit Nachfrage öffnen")
+	{
+		if (MessageBox::Show("Link öffnen?", "Achtung!", MessageBoxButtons::OKCancel, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::OK)
+		{
+			//System::String^ managed = e->LinkText;
+			//std::string myURL = msclr::interop::marshal_as<std::string>(managed);
+			String^ myURL = e->LinkText;
+			
+			openURL(myURL);
+			
+		}
+	}
+	else
+	{
+		//System::String^ managed = e->LinkText;
+		//std::string myURL = msclr::interop::marshal_as<std::string>(managed);
+		String^ myURL = e->LinkText;
+		openURL(myURL);
+	}
+}
+private: System::Void linksOhneNachfrageOeffnenToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (linksOhneNachfrageOeffnenToolStripMenuItem->Text == "&Links ohne Nachfrage öffnen")
+	{
+		linksOhneNachfrageOeffnenToolStripMenuItem->Text = "&Links mit Nachfrage öffnen";
+	}
+	else
+	{
+		linksOhneNachfrageOeffnenToolStripMenuItem->Text = "&Links ohne Nachfrage öffnen";
 	}
 }
 };

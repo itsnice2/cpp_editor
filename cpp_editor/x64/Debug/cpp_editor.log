@@ -1,3 +1,5 @@
 ﻿  CppCLR_WinFormsProject.cpp
+C:\Users\ea-da\Documents\GitHub\cpp_editor\Form1.h(323,17): warning C4477: "sprintf": Die Formatzeichenfolge "%s" erfordert ein Argument vom Typ "char *", das variadic-Argument "1" weist aber den Typ "System::String ^" auf.
+C:\Users\ea-da\Documents\GitHub\cpp_editor\Form1.h(323,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   AssemblyInfo.obj : MSIL-Modulgefunden; inkrementelles Verknüpfen wird für MSIL deaktiviert; vollständiger Link wird durchgeführt
   cpp_editor.vcxproj -> C:\Users\ea-da\Documents\GitHub\cpp_editor\x64\Debug\cpp_editor.exe
