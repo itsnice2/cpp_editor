@@ -145,33 +145,35 @@ namespace CppCLRWinFormsProject {
 			// speichernToolStripMenuItem
 			// 
 			this->speichernToolStripMenuItem->Name = L"speichernToolStripMenuItem";
-			this->speichernToolStripMenuItem->Size = System::Drawing::Size(166, 22);
+			this->speichernToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::S));
+			this->speichernToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->speichernToolStripMenuItem->Text = L"&Speichern";
 			this->speichernToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::speichernToolStripMenuItem_Click);
 			// 
 			// speichernUnterToolStripMenuItem
 			// 
 			this->speichernUnterToolStripMenuItem->Name = L"speichernUnterToolStripMenuItem";
-			this->speichernUnterToolStripMenuItem->Size = System::Drawing::Size(166, 22);
+			this->speichernUnterToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->speichernUnterToolStripMenuItem->Text = L"Speichern &unter...";
 			this->speichernUnterToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::speichernUnterToolStripMenuItem_Click);
 			// 
 			// dateiOeffnenToolStripMenuItem
 			// 
 			this->dateiOeffnenToolStripMenuItem->Name = L"dateiOeffnenToolStripMenuItem";
-			this->dateiOeffnenToolStripMenuItem->Size = System::Drawing::Size(166, 22);
+			this->dateiOeffnenToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->dateiOeffnenToolStripMenuItem->Text = L"&Datei öffnen";
 			this->dateiOeffnenToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::dateiOeffnenToolStripMenuItem_Click);
 			// 
 			// toolStripSeparator1
 			// 
 			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(163, 6);
+			this->toolStripSeparator1->Size = System::Drawing::Size(177, 6);
 			// 
 			// beendenToolStripMenuItem
 			// 
 			this->beendenToolStripMenuItem->Name = L"beendenToolStripMenuItem";
-			this->beendenToolStripMenuItem->Size = System::Drawing::Size(166, 22);
+			this->beendenToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Alt | System::Windows::Forms::Keys::F4));
+			this->beendenToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->beendenToolStripMenuItem->Text = L"&Beenden";
 			this->beendenToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::beendenToolStripMenuItem_Click);
 			// 
@@ -184,11 +186,12 @@ namespace CppCLRWinFormsProject {
 			});
 			this->extrasToolStripMenuItem->Name = L"extrasToolStripMenuItem";
 			this->extrasToolStripMenuItem->Size = System::Drawing::Size(50, 20);
-			this->extrasToolStripMenuItem->Text = L"Extras";
+			this->extrasToolStripMenuItem->Text = L"&Extras";
 			// 
 			// toolStripMenuItem_Suche
 			// 
 			this->toolStripMenuItem_Suche->Name = L"toolStripMenuItem_Suche";
+			this->toolStripMenuItem_Suche->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::F));
 			this->toolStripMenuItem_Suche->Size = System::Drawing::Size(227, 22);
 			this->toolStripMenuItem_Suche->Text = L"&Suche";
 			this->toolStripMenuItem_Suche->Click += gcnew System::EventHandler(this, &Form1::toolStripMenuItem_Suche_Click);
@@ -241,6 +244,7 @@ namespace CppCLRWinFormsProject {
 			// infoToolStripMenuItem
 			// 
 			this->infoToolStripMenuItem->Name = L"infoToolStripMenuItem";
+			this->infoToolStripMenuItem->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::I));
 			this->infoToolStripMenuItem->Size = System::Drawing::Size(40, 20);
 			this->infoToolStripMenuItem->Text = L"&Info";
 			this->infoToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::infoToolStripMenuItem_Click);
