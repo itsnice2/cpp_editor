@@ -2,3 +2,7 @@ C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.vcxpr
 C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.Form1.resources
 C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.vcxproj.GenerateResource.cache
 C:\Users\ea-da\Documents\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.suche.resources
+D:\Projekte\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.vcxproj.AssemblyReference.cache
+D:\Projekte\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.Form1.resources
+D:\Projekte\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.suche.resources
+D:\Projekte\GitHub\cpp_editor\cpp_editor\x64\Debug\cpp_editor.vcxproj.GenerateResource.cache

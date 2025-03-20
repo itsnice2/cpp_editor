@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\",
+  "WorkspaceRootPath": "D:\\Projekte\\GitHub\\cpp_editor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|D:\\Projekte\\GitHub\\cpp_editor\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|D:\\Projekte\\GitHub\\cpp_editor\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\CppCLR_WinFormsProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|D:\\Projekte\\GitHub\\cpp_editor\\CppCLR_WinFormsProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:CppCLR_WinFormsProject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|D:\\Projekte\\GitHub\\cpp_editor\\suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|D:\\Projekte\\GitHub\\cpp_editor\\suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{941E384E-7288-461B-A2B9-81060039150F}|cpp_editor.vcxproj|solutionrelative:suche.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -30,21 +30,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.h",
-              "DocumentMoniker": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\Form1.h",
+              "Title": "Form1.h [Entwurf]",
+              "DocumentMoniker": "D:\\Projekte\\GitHub\\cpp_editor\\Form1.h",
               "RelativeDocumentMoniker": "Form1.h",
-              "ToolTip": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\Form1.h",
+              "ToolTip": "D:\\Projekte\\GitHub\\cpp_editor\\Form1.h [Entwurf]",
+              "RelativeToolTip": "Form1.h [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-09T20:49:50.128Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.h",
+              "DocumentMoniker": "D:\\Projekte\\GitHub\\cpp_editor\\Form1.h",
+              "RelativeDocumentMoniker": "Form1.h",
+              "ToolTip": "D:\\Projekte\\GitHub\\cpp_editor\\Form1.h",
               "RelativeToolTip": "Form1.h",
-              "ViewState": "AQIAAFUBAAAAAAAAAAAjwGkBAAAHAAAA",
+              "ViewState": "AQIAAG0BAAAAAAAAAAAjwH0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-28T08:11:32.831Z",
               "EditorCaption": ""
@@ -53,9 +61,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "suche.h",
-              "DocumentMoniker": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\suche.h",
+              "DocumentMoniker": "D:\\Projekte\\GitHub\\cpp_editor\\suche.h",
               "RelativeDocumentMoniker": "suche.h",
-              "ToolTip": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\suche.h",
+              "ToolTip": "D:\\Projekte\\GitHub\\cpp_editor\\suche.h",
               "RelativeToolTip": "suche.h",
               "ViewState": "AQIAAKUAAAAAAAAAAAAAAKMAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -63,38 +71,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "suche.h [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\suche.h",
+              "DocumentMoniker": "D:\\Projekte\\GitHub\\cpp_editor\\suche.h",
               "RelativeDocumentMoniker": "suche.h",
               "ToolTip": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\suche.h [Entwurf]",
-              "RelativeToolTip": "suche.h [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-28T09:01:33.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CppCLR_WinFormsProject.cpp",
-              "DocumentMoniker": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\CppCLR_WinFormsProject.cpp",
+              "DocumentMoniker": "D:\\Projekte\\GitHub\\cpp_editor\\CppCLR_WinFormsProject.cpp",
               "RelativeDocumentMoniker": "CppCLR_WinFormsProject.cpp",
-              "ToolTip": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\CppCLR_WinFormsProject.cpp",
+              "ToolTip": "D:\\Projekte\\GitHub\\cpp_editor\\CppCLR_WinFormsProject.cpp",
               "RelativeToolTip": "CppCLR_WinFormsProject.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-28T08:11:43.356Z"
-            },
+              "WhenOpened": "2024-06-28T08:11:43.356Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.h [Entwurf]",
-              "DocumentMoniker": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\Form1.h",
-              "RelativeDocumentMoniker": "Form1.h",
-              "ToolTip": "C:\\Users\\ea-da\\Documents\\GitHub\\cpp_editor\\Form1.h [Entwurf]",
-              "RelativeToolTip": "Form1.h [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-28T08:13:01.465Z",
-              "EditorCaption": " [Entwurf]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
